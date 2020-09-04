@@ -13,8 +13,8 @@ server.use(express.static("public"));
 
 mongoose.connect(MONGODB_URI);
 
-app.use(require("./routes/api.js"));
-app.use(require("./routes/view.js"));
+server.use(require("./routes/api.js"));
+server.use(require("./routes/view.js"));
 
 server.listen(PORT, () => {
     console.log(
