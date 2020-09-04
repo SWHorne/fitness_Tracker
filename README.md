@@ -2,7 +2,7 @@
 
 ## Description
 
-A NoSQL db with a Mongoose schema. Created to track exercise.
+A Mongo db with a Mongoose schema. Created to track exercise.
 
 ## Table of Contents
 
