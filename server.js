@@ -13,8 +13,8 @@ server.use(express.static("public"));
 
 mongoose.connect(MONGODB_URI);
 
-server.use(require("./routes/api-routes.js"));
-server.use(require("./routes/html-routes.js"));
+app.use(require("./routes/api.js"));
+app.use(require("./routes/view.js"));
 
 server.listen(PORT, () => {
     console.log(
@@ -26,3 +26,5 @@ server.listen(PORT, () => {
 
 
 // mongodb+srv://UofUser:AtlasPW2020@fitness-tracker.0ehxl.mongodb.net/<dbname>?retryWrites=true&w=majority
+
+// mongodb+srv://UofUser:AtlasPW2020@fitness-tracker.0ehxl.mongodb.net/workout?retryWrites=true&w=majority
